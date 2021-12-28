@@ -17,8 +17,7 @@ function ContactForm() {
         console.log(firstName.current.value);
         console.log(lastName.current.value);
         console.log(email.current.value);
-        console.log(message.current.value);
-        
+        console.log(message.current.value); 
     }
 
     return (
@@ -26,7 +25,9 @@ function ContactForm() {
             <form id="contact_form" onSubmit={submit}>
                 <Row className="justify-content-md-center">
                     <Col>
-                        <h1>Contact Form</h1>
+                        <p>
+                            Send me a message! I'd be happy to hear from you!
+                        </p>
                     </Col>
                 </Row>
                 <Row className="justify-content-md-center">
