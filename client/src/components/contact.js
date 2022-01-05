@@ -21,29 +21,22 @@ function ContactForm() {
     }
 
     return (
-        <Container>
-            <form id="contact_form" onSubmit={submit}>
+        <Container className="d-flex justify-content-center">
+            <form id="contact_form" onSubmit={submit} className='w-75'>
                 <Row className="justify-content-md-center">
                     <Col>
-                        <p>
-                            Send me a message! I'd be happy to hear from you!
-                        </p>
-                    </Col>
-                </Row>
-                <Row className="justify-content-md-center">
-                    <Col sm lg="3">
                         <FloatingLabel controlId="floatingFirstName" label="First Name" className="mb-3">
-                            <Form.Control type="text" placeholder="First Name" ref={firstName} required />
+                            <Form.Control type="text" placeholder="First Name" ref={firstName} required className="input_shadow"/>
                         </FloatingLabel>
                     </Col>
-                    <Col sm lg="3">
+                    <Col>
                         <FloatingLabel controlId="floatingLastName" label="Last Name" className="mb-3">
-                            <Form.Control type="text" placeholder="Last Name" ref={lastName} required />
+                            <Form.Control type="text" placeholder="Last Name" ref={lastName} required className="input_shadow"/>
                         </FloatingLabel>
                     </Col>
                 </Row>
                 <Row className="justify-content-md-center">
-                    <Col sm lg="6">
+                    <Col>
                         <Form.Floating className="mb-3">
                             <Form.Control
                             id="floatingEmail"
@@ -51,6 +44,7 @@ function ContactForm() {
                             placeholder="name@example.com"
                             ref={email}
                             required
+                            className="input_shadow"
                             />
                             <label htmlFor="floatingInputCustom">Your Email address</label>
                         </Form.Floating>
@@ -62,6 +56,7 @@ function ContactForm() {
                             style={{ height: '200px' }}
                             ref={message}
                             required
+                            className="input_shadow"
                             />
                             <label htmlFor="floatingMessage">Send me a message!</label>
                         </Form.Floating>
@@ -70,7 +65,7 @@ function ContactForm() {
                 <Row>
                     <Col>
                         <br/>
-                        <Button variant="primary" type="submit">
+                        <Button variant="dark" type="submit">
                             Submit
                         </Button>
                         <br/>
