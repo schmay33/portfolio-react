@@ -6,6 +6,7 @@ import {
 	Routes,
 	Route
 } from 'react-router-dom';
+import Home from './components/home';
 import NotFound from './components/errors/NotFound';
 import Forbidden from './components/errors/Forbidden';
 import UnhandledError from './components/errors/UnhandledError';
@@ -16,6 +17,8 @@ function App() {
 			<Header />
 			<main>
 				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/home" element={<Home />} />
 					<Route path="/contact" element={<ContactForm />} />
 					<Route path="/notfound" element={<NotFound />} />
 					<Route path="/forbidden" element={<Forbidden />} />
