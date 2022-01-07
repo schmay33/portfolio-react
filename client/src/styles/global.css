@@ -1,10 +1,11 @@
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background: #8EB8E5;
+	font-family: 'Inconsolata', monospace;
+	background: white;
+	color: black;
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 38px;
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
@@ -15,7 +16,17 @@ p {
 	margin-bottom: 1em;
 }
 
-.input_shadow {
-	box-shadow: 4px 4px #7C99B4;
-	border-radius: 4px 4px;
+div.nav {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#mainPictureOfMe {
+	border-radius: 50%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
