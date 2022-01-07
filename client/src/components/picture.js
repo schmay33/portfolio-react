@@ -8,7 +8,7 @@ function PictureOfMe(props) {
                 src="profile.jpg"
                 width={props.width}
                 height={props.height}
-                className="d-inline-block align-top"
+                className={props.class}
                 alt="Nathan Schmidt"
             />
         </>
